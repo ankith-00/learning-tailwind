@@ -1,0 +1,29 @@
+ - - - - -  T A I L W I N D  - - - - -
+
+STEP - 01 : RUN CMD  " npm init -y "
+
+STEP - 02 : RUN CMD " npm install -D tailwindcss " 
+
+STEP - 03 : RUN CMD " npx tailwindcss init "
+
+STEP - 04 : CREATE 'MAIN' FOLDER & CREATE "index.html" FILE
+
+STEP - 05 : CREATE 'SRC' FOLDER & CREATE "input.css"  FILE & PAST  "@tailwind base; @tailwind components; @tailwind utilities;"
+
+STEP - 06 : GO TO 'tailwindcss.confiig.js' IN 'content []'  ADD  'content: ['./main/*.html']' TO INCLUDE ALL HTML FILES IN MAIN FOLDER
+
+STEP - 07 : RUN CMD " npx tailwindcss -i ./src/input.css -o ./main/css/style.css "  TO CREATE OUTPUT CSS FILE IN MAIN FOLDER
+
+STEP - 08 : FROM VS CODE EXTENSIONS INSTALL 'Tailwind CSS IntelliSense' EXTENSION FOR TAILWIND CLASSES 
+
+STEP - 08 : FROM VS CODE EXTENSIONS INSTALL 'Inline fold' EXTENSION TO FOLD TAILWIND CLASSES 
+
+STEP - 09 : GO TO 'package.json'  EDIT  "test": "echo \"Error: no test specified\" && exit 1"  TO  "project": "npx tailwindcss -i ./src/input.css -o ./main/css/style.css --watch"
+
+STEP - 10 : RUN CMD 'npm i -D prettier-plugin-tailwindcss'
+
+STEP - 11 : ADD "prettier" : "npx prettier --write **/*.html" AFTER "project": "npx tailwindcss -i ./src/input.css -o ./main/css/style.css --watch" ADDING , AT THE END
+
+STEP - 11 : RUN CMD 'npm run project' TO RUN PROJECT NOW OPEN .html FILE WITH LIVE SERVER TO SEE OUTPUT
+
+ - - - -  NOW GOOD TO GO AND BUILD PROJECTS  - - - - 
